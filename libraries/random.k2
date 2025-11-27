@@ -1,0 +1,15 @@
+seed = 0
+
+# set the seed
+
+function set_seeds(s) then
+   seed = s
+end
+
+function rand() then
+   a  = 69
+   c = 73
+   m = 2147483648
+   
+   seed = (a * seed * c) - (m(seed + a)) + (a * c * c)
+end

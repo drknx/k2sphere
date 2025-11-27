@@ -1,0 +1,10 @@
+{
+    "if": "if",
+    "else": "else",
+    "while": "while",
+    "fn": "function",
+    "return": "output",
+    "import": "get",
+    "then": "then",
+    "end": "end"
+}

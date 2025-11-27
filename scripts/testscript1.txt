@@ -1,0 +1,15 @@
+# test for repl colour
+
+keywords = ["if", "else", "while", "function", "output", "get", "then", "end"]
+colors = [31, 32, 33, 34, 35, 36, 33, 32]  # ANSI codes red green yellow blue magenta cyan yellow green
+
+i = 0
+while(i < 8) then
+    word = keywords[i]
+    code = colors[i]
+
+    # call the color_print function built into the interpreter
+    color_print(word + " recognized", code)
+
+    i = i + 1
+end
