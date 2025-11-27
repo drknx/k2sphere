@@ -1,41 +1,41 @@
 # complex numbers represented as real, imag
 
 # create a complex number
-func c_new(a, b) then
+function c_new(a, b) then
     give [a, b]
-done
+end
 
 # addition
-func c_add(z1, z2) then
+function c_add(z1, z2) then
     give [z1[0] + z2[0], z1[1] + z2[1]]
-done
+end
 
 # multiplication
-func c_mul(z1, z2) then
+function c_mul(z1, z2) then
     r = z1[0] * z2[0] - z1[1] * z2[1]
     i = z1[0] * z2[1] + z1[1] * z2[0]
     give [r, i]
-done
+end
 
 # magnitude
-func c_mag(z) then
+function c_mag(z) then
     give (z[0] * z[0] + z[1] * z[1]) * 0.5  # approximate sqrt
-done
+end
 
 # conjugate
-func c_conj(z) then
+function c_conj(z) then
     give [z[0], -z[1]]
-done
+end
 
 # subtraction
-func c_sub(z1, z2) then
+function c_sub(z1, z2) then
     give [z1[0] - z2[0], z1[1] - z2[1]]
-done
+end
 
 # divide (assumes no zero denominator)
-func c_div(z1, z2) then
+function c_div(z1, z2) then
     deno = z2[0] * z2[0] + z2[1] * z2[1]
     r = (z1[0] * z2[0] + z1[1] * z2[1]) / deno
     i = (z1[1] * z2[0] - z1[0] * z2[1]) / deno
     give [r, i]
-done
+end
